@@ -4,6 +4,12 @@
   "dependencies": {
     "@tensorflow/tfjs-node": "^1.2.3",
     "canvas": "^2.5.0",
-    "face-api.js": "../../"
-  }
+    "face-api.js": "../../",
+    "snyk": "^1.230.5"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
